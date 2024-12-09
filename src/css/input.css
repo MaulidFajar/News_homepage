@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav_link {
+  margin: 0 0 5px 20px;
+}
+
+.nav_active .burger_line:nth-child(1) {
+  transform: rotate(45deg) translate(9px, 5px);
+}
+.nav_active .burger_line:nth-child(2) {
+  transform: scale(0);
+}
+.nav_active .burger_line:nth-child(3) {
+  transform: rotate(-45deg) translate(9px, -5px);
+}
