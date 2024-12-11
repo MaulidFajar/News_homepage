@@ -51,7 +51,7 @@
 
           <!-- Navbar Menu -->
           <ul
-            class="navbar_list fixed top-0 right-0 w-0 h-screen bg-white text-dark-blue flex flex-col place-items-start pt-28 transition-all duration-300 ease-in-out md:relative md:w-auto md:h-auto md:flex-row md:items-center md:justify-end md:pt-2"
+            class="navbar_list fixed top-0 right-0 w-0 h-screen bg-white text-dark-blue flex flex-col place-items-start pt-28 transition-all duration-300 ease-in-out md:relative md:w-auto md:h-auto md:flex-row md:justify-end md:pt-4 md:font-light md:text-dark-grayish-blue"
           >
             <li class="nav_link"><a href="#">Home</a></li>
             <li class="nav_link"><a href="#">New</a></li>
@@ -66,29 +66,38 @@
       id="main"
       class="font-primary md:h-screen transition-all duration-300 ease-in-out"
     >
-      <div class="container md:container">
-        <figure class="my-7">
-          <img
-            class="hero_img"
-            src="assets/images/image-web-3-mobile.jpg"
-            alt="hero image in the website"
-          />
-        </figure>
-        <h1 class="text-dark-blue text-4xl font-extrabold pr-6 mb-5">
-          The Bright Future of Web 3.0?
-        </h1>
-        <p class="text-dark-grayish-blue text-sm">
-          We dive into the next evolution of the web that claims to put the
-          power of the platforms back into the hands of the people. But is it
-          really fulfilling its promise?
-        </p>
-        <button
-          class="bg-soft-red py-3 px-7 font-extrabold text-xs tracking-super-wide uppercase text-dark-blue mt-5 mb-10 hover:bg-dark-blue hover:text-off-white transition-all duration-200"
-        >
-          Read more
-        </button>
-
-        <div class="bg-dark-blue p-5">
+      <div
+        class="container md:container md:grid md:grid-cols-3 md:grid-rows-[1fr_200px] md:gap-x-5 md:mt-7"
+      >
+        <div class="md:col-span-2">
+          <figure class="my-7 md:mb-7 md:my-0">
+            <img
+              class="hero_img"
+              src="assets/images/image-web-3-mobile.jpg"
+              alt="hero image in the website"
+            />
+          </figure>
+          <div class="hero_text md:grid md:grid-cols-2">
+            <h1
+              class="text-dark-blue text-4xl font-extrabold pr-6 mb-5 md:text-5xl md:pr-7"
+            >
+              The Bright Future of Web 3.0?
+            </h1>
+            <div>
+              <p class="text-dark-grayish-blue text-sm">
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <button
+                class="bg-soft-red py-3 px-7 font-extrabold text-xs tracking-super-wide uppercase text-dark-blue mt-5 mb-10 hover:bg-dark-blue hover:text-off-white transition-all duration-200 md:mb-0"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="bg-dark-blue p-5 md:col-span-1">
           <p class="text-soft-orange font-semibold text-3xl">New</p>
 
           <div class="border-b-2 border-gray-700 py-6">
@@ -124,59 +133,64 @@
             </p>
           </div>
         </div>
-        <div class="news_list mt-14">
+        <div
+          class="news_list mt-14 md:flex md:items-start md:col-span-3 md:gap-x-8 md:flex-wrap"
+        >
           <div class="news flex items-center gap-x-5 mb-7">
             <img src="assets/images/image-retro-pcs.jpg" alt="" class="w-24" />
-            <div class="news_text">
-              <span class="text-soft-red text-3xl font-bold tracking-wide mb-1"
+            <div class="news_text md:w-52">
+              <span
+                class="text-soft-red text-3xl block font-bold tracking-wide mb-1"
                 >01</span
               >
               <h3
-                class="text-dark-blue text-lg font-extrabold my-2 cursor-pointer hover:text-soft-red"
+                class="text-dark-blue text-lg md:text-base font-extrabold my-2 cursor-pointer hover:text-soft-red"
               >
                 Reviving Retro PCs
               </h3>
-              <p class="text-sm text-dark-grayish-blue mt-1">
+              <p class="text-sm md:text-xs text-dark-grayish-blue mt-1">
                 What happens when old PCs are given modern upgrades?
               </p>
             </div>
           </div>
-          <div class="news flex items-center gap-x-5 mb-7">
+          <div class="news flex items-center md:relative gap-x-5 mb-7">
             <img
               src="assets/images/image-top-laptops.jpg"
               alt=""
               class="w-24"
             />
-            <div class="news_text">
+            <div class="news_text md:w-52">
               <span class="text-soft-red text-3xl font-bold tracking-wide mb-1"
                 >02</span
               >
               <h3
-                class="text-dark-blue text-lg font-extrabold my-2 cursor-pointer hover:text-soft-red"
+                class="text-dark-blue text-lg md:text-base font-extrabold my-2 cursor-pointer hover:text-soft-red"
               >
                 Top 10 Laptops of 2022
               </h3>
-              <p class="text-sm text-dark-grayish-blue mt-1">
+              <p class="text-sm md:text-xs text-dark-grayish-blue mt-1 pr-6">
                 Our best picks for various needs and budgets.
               </p>
             </div>
           </div>
-          <div class="news flex items-center gap-x-5 mb-7">
+          <div class="news flex items-center md:items-start gap-x-5 mb-7">
             <img
               src="assets/images/image-gaming-growth.jpg"
               alt=""
               class="w-24"
             />
-            <div class="news_text">
+            <div class="news_text md:w-52">
               <span class="text-soft-red text-3xl font-bold tracking-wide mb-1"
                 >03</span
               >
               <h3
-                class="text-dark-blue text-lg font-extrabold my-2 cursor-pointer hover:text-soft-red"
+                class="text-dark-blue text-lg md:text-base font-extrabold my-2 cursor-pointer hover:text-soft-red"
               >
                 The Growth of Gaming
               </h3>
-              <p class="text-sm text-dark-grayish-blue mt-1 pr-6">
+              <p
+                class="text-sm md:text-xs text-dark-grayish-blue mt-1 pr-6 md:pr-0"
+              >
                 How the pandemic has sparked fresh opportunities.
               </p>
             </div>
